@@ -123,3 +123,21 @@ function some (collection, testing){
   }, false);
 
 }
+
+
+// find
+function find (collection, predicate){
+var count = 0;
+
+  return reduce (collection, function(accum, next){
+    if (predicate(accum)){
+      return collection[count];
+    }
+    count++;
+    predicate(next);
+
+    return collection[count];
+
+  }, false);
+
+}
