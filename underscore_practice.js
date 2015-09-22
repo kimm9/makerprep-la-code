@@ -4,6 +4,7 @@ function p(input){
 
 
 // each
+
 function each(collection, fn){
   if (Array.isArray(collection)){
     for(var i=0; i<collection.length; i++){
@@ -19,6 +20,7 @@ function each(collection, fn){
 
 
 // map
+
 function map(collection, callback){
   var mapped = [];
 
@@ -32,6 +34,7 @@ function map(collection, callback){
 
 
 // filter
+
 function filter(collection, test){
   var filtered = [];
 
@@ -46,6 +49,7 @@ function filter(collection, test){
 
 
 // reduce
+
 function reduce(collection, combine, startVal) {
   var counter = 0,
     total = 0;
@@ -113,6 +117,7 @@ function pluck (collection, key){
 
 
 // some
+
 function some (collection, testing){
 
   return reduce (collection, function(accum, current){
@@ -126,6 +131,7 @@ function some (collection, testing){
 
 
 // find
+
 function find (collection, predicate){
 var count = 0;
 
